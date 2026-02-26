@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azoba Dictionary</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Azoba Dictionary</h1>
+        <p>Sponsored by Copilot</p>
+        <p>Type a word to discover its meaning.</p>
+        <button id="tutorial-btn">📺 How to Use</button>
+    </header>
+    <main>
+        <div class="search-container">
+            <input type="text" id="word-input" placeholder="Enter a word...">
+            <button id="search-btn">Search</button>
+        </div>
+        <div id="result"></div>
+    </main>
+
+    <div id="tutorial-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>How to Use Azoba Dictionary</h2>
+            <p><strong>Steps:</strong></p>
+            <ol>
+                <li>Type any word in the search box</li>
+                <li>Click "Search" or press Enter</li>
+                <li>View the meaning instantly</li>
+                <li>Try another word!</li>
+            </ol>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
